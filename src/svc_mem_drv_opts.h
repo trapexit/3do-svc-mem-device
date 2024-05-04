@@ -1,0 +1,18 @@
+#pragma once
+
+// CmdOptions flags
+#define SVC_MEM_CMD_FLAG_WORDS (1 << 0)
+
+enum svc_mem_unit_e
+  {
+    SVC_MEM_UNIT_NONE,
+    SVC_MEM_UNIT_DRAM,
+    SVC_MEM_UNIT_VRAM,
+    SVC_MEM_UNIT_ROM1,
+    SVC_MEM_UNIT_ROM2,
+    SVC_MEM_UNIT_NVRAM,
+    SVC_MEM_UNIT_MADAM,
+    SVC_MEM_UNIT_CLIO,
+    SVC_MEM_UNIT_SPORT,
+    SVC_MEM_UNIT_MAX = SVC_MEM_UNIT_NVRAM
+  };
